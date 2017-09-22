@@ -1,0 +1,23 @@
+<h2 class="page-header">GreedyGame</h2>
+<form (submit)="onSubmit()"> 
+	<div class="form-group" style="width:300pt;">
+		<label>From Date</label>
+		<input type="date" [(ngModel)]="fromdate" name="fromdate" class="form-control">
+	</div>
+	<div class="form-group" style="width:300pt;">
+		<label>To Date</label>
+		<input type="date" [(ngModel)]="todate" name="todate" class="form-control">
+	</div>
+		
+	<br/>
+	<br/>
+	<input type="submit" class="btn btn-primary" value="Submit">
+</form>
+
+<fusioncharts
+ width="600" 
+ height="400"
+ type="column2d"
+ dataFormat="json"
+ [dataSource]=Result >
+ </fusioncharts>
